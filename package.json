@@ -1,31 +1,42 @@
 {
   "name": "beerjs-valdivia-site",
   "version": "0.1.0",
-  "description": "BeerJS Valdivia Site",
-  "main": "index.js",
-  "scripts": {
-    "start": "node_modules/parcel-bundler/bin/cli.js index.html -p 9000",
-    "build": "rm -rf .cache && rm -rf dist && node_modules/parcel-bundler/bin/cli.js build index.html"
+  "description": "Encuentro de cerveza y código",
+  "meta": {
+    "title": "BeerJS Valdivia | Edición Mayo 2018",
+    "date": "Jueves 17 mayo 2018",
+    "location": "Nube Cowork Serrano 958, Valdivia",
+    "topic": "JavaScript y CSS (Arquitectura, metodologias, postcss, cssgrid, etc)",
+    "edition": "Mayo"
   },
-  "keywords": ["beerjs", "js"],
-  "author": "raulghm",
+  "main": "test.js",
+  "scripts": {
+    "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
+    "server": "npm run hbs && http-server ./dist",
+    "css:dev": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css -w --no-lint",
+    "css:build": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css --no-lint -m",
+    "js": "uglifyjs ./src/scripts/main.js --output ./dist/assets/scripts/main.js",
+    "start": "watch 'npm run hbs' src",
+    "build": "npm run hbs && npm run css:build && npm run js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "components": "^0.1.0",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-modules": "^1.1.0",
+    "handlebars-layouts": "^3.1.4",
+    "hbs-cli": "^1.1.1",
+    "http-server": "^0.11.1",
+    "nodemon": "^1.17.3",
+    "parcel-bundler": "^1.7.1",
+    "suitcss-preprocessor": "^4.0.0",
+    "uglify-js": "^3.3.22",
     "vue": "^2.5.16",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue-router": "^3.0.1"
+    "vue-agile": "^0.3.7",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^1.0.0",
-    "eslint-plugin-vue": "^4.4.0",
-    "parcel-bundler": "^1.7.0",
-    "postcss-import": "^11.1.0",
-    "postcss-url": "^7.3.2",
+    "@vue/component-compiler-utils": "^1.1.0",
     "vue-template-compiler": "^2.5.16"
   }
 }
