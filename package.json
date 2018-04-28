@@ -20,7 +20,7 @@
     "build": "npm run hbs && npm run css:build && npm run js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["beerjs", "javascript", "valdivia"],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -28,16 +28,8 @@
     "handlebars-layouts": "^3.1.4",
     "hbs-cli": "^1.1.1",
     "http-server": "^0.11.1",
-    "nodemon": "^1.17.3",
-    "parcel-bundler": "^1.7.1",
     "suitcss-preprocessor": "^4.0.0",
     "uglify-js": "^3.3.22",
-    "vue": "^2.5.16",
-    "vue-agile": "^0.3.7",
     "watch": "^1.0.2"
-  },
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^1.1.0",
-    "vue-template-compiler": "^2.5.16"
   }
 }
