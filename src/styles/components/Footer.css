@@ -7,6 +7,10 @@
   font-family: var(--font-family-alt);
 }
 
+.Footer .Button {
+  margin-top: 16px;
+}
+
 .Footer-body {
   line-height: 1.6;
   font-size: .9rem;
