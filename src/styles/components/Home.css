@@ -10,10 +10,11 @@
   align-items: center;
 }
 
-@media (min-width: 40em) {
+@media (--md-viewport) {
   .Home-section {
     height: 90vh;
     padding: 0 20px;
+    min-height: 700px;
   }
 }
 
@@ -162,9 +163,16 @@
 .Home-section--next .Home-section-item--left {
   align-self: center;
   padding: 2em;
+  letter-spacing: 1px;
 }
 
-@media (min-width: 40em) {
+@media (--md-viewport) {
+  .Home-section--next .Home-section-item--left {
+    letter-spacing: 0;
+  }
+}
+
+@media (--md-viewport) {
   .Home-section--next .Home-section-body {
     display: grid;
     grid-template-columns: 2fr 3fr;

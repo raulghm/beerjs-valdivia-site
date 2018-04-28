@@ -1,3 +1,5 @@
+@import "cata-breakpoints";
+
 @import "./components/Home.css";
 @import "./components/Ribbon.css";
 @import "./components/Nav.css";
@@ -6,7 +8,7 @@
 @import "./components/Button.css";
 
 :root {
-  --color-black: #192731;
+  --color-black: #18232d;
   --color-gray: #505b66;
   --color-gray-light: #a7adba;
   --color-white: #f9fbff;
@@ -22,7 +24,6 @@
   --color-sky: #d8deea;
   --font-family-primary: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-family-alt: "Roboto Mono", Helvetica, Arial, sans-serif;
-  --font-family-mono: "VT323", Helvetica, Arial, sans-serif;
   --font-family-default: Helvetica, Arial, sans-serif;
 }
 

@@ -6,7 +6,7 @@
     "title": "BeerJS Valdivia | Edición Mayo 2018",
     "date": "Jueves 17 mayo 2018",
     "location": "Nube Cowork Serrano 958, Valdivia",
-    "topic": "JavaScript y CSS (Arquitectura, metodologias, postcss, cssgrid, etc)",
+    "topic": "JavaScript + CSS (Arquitectura, metodologias, postcss, cssgrid, etc)",
     "edition": "Mayo"
   },
   "main": "test.js",
@@ -16,7 +16,7 @@
     "css:dev": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css -w --no-lint",
     "css:build": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css --no-lint -m",
     "js": "uglifyjs ./src/scripts/main.js --output ./dist/assets/scripts/main.js",
-    "start": "watch 'npm run hbs' src",
+    "start": "watch 'npm run hbs && npm run css:dev' src",
     "build": "npm run hbs && npm run css:build && npm run js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cata-breakpoints": "^0.1.0-alpha.1",
     "handlebars-layouts": "^3.1.4",
     "hbs-cli": "^1.1.1",
     "http-server": "^0.11.1",
