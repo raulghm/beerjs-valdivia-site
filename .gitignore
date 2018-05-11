@@ -13,3 +13,6 @@ yarn.lock
 *.njsproj
 *.sln
 .cache
+
+dist/assets/scripts
+dist/assets/styles

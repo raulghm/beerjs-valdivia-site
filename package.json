@@ -15,13 +15,34 @@
     "server": "npm run hbs && http-server ./dist",
     "css:dev": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css -w --no-lint",
     "css:build": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css --no-lint -m",
-    "js": "uglifyjs ./src/scripts/main.js --output ./dist/assets/scripts/main.js",
-    "start": "watch 'npm run hbs && npm run css:dev' src",
-    "build": "npm run hbs && npm run css:build && npm run js",
+    "js:dev": "babel ./src/scripts/main.js --out-file ./dist/assets/scripts/main.js",
+    "js:build": "babel ./src/scripts/main.js --out-file ./dist/assets/scripts/main.js",
+    "start": "watch 'npm run hbs && npm run js:dev && npm run css:dev' src",
+    "build": "npm run hbs && npm run css:build && npm run js:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["beerjs", "javascript", "valdivia"],
-  "author": "",
+  "keywords": [
+    "beerjs",
+    "javascript",
+    "valdivia"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "standard"
+    ]
+  },
+  "author": "raulghm",
   "license": "ISC",
   "dependencies": {
     "cata-breakpoints": "^0.1.0-alpha.1",
@@ -29,7 +50,17 @@
     "hbs-cli": "^1.1.1",
     "http-server": "^0.11.1",
     "suitcss-preprocessor": "^4.0.0",
-    "uglify-js": "^3.3.22",
     "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
