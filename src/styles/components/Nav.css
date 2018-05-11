@@ -15,6 +15,14 @@
 
 .Nav a {
   color: var(--color-sky);
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40em) {
+  .Nav a {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 }
 
 .Nav a:hover {
@@ -26,10 +34,9 @@
 }
 
 .Nav-item {
-  margin-bottom: 10px;
   opacity: .6;
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 4px 8px;
 }
 
 @media (min-width: 40em) {

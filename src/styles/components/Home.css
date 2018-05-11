@@ -5,7 +5,7 @@
 .Home-section {
   min-height: 500px;
   background: var(--color-black);
-  padding: 40px 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
 }
@@ -147,13 +147,14 @@
 
 .Home-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   z-index: 2;
   color: #fff;
   left: 0;
   right: 0;
   font-size: 1.6rem;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .Home-section--next {

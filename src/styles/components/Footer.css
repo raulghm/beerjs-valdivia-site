@@ -2,7 +2,7 @@
   background-color: var(--color-black);
   text-align: center;
   color: var(--color-sky);
-  padding: 4em 2em;
+  padding: 2em 0;
   font-weight: lighter;
   font-family: var(--font-family-alt);
 }
