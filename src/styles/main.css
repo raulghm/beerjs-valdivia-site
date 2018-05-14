@@ -1,3 +1,6 @@
+@import "cata-base";
+@import "cata-variables";
+@import "cata-types";
 @import "cata-breakpoints";
 
 @import "./components/Home.css";

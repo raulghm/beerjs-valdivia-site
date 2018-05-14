@@ -7,7 +7,8 @@
     "date": "Jueves 17 mayo 2018",
     "location": "Nube Cowork Serrano 958, Valdivia",
     "topic": "JavaScript + CSS (Arquitectura, metodologias, postcss, cssgrid, etc)",
-    "edition": "Mayo"
+    "edition": "Mayo",
+    "register_link": "https://guestli.st/563484"
   },
   "main": "test.js",
   "scripts": {
@@ -45,7 +46,10 @@
   "author": "raulghm",
   "license": "ISC",
   "dependencies": {
-    "cata-breakpoints": "^0.1.0-alpha.1",
+    "cata-base": "^4.0.0",
+    "cata-breakpoints": "^0.2.0",
+    "cata-types": "^0.1.0-alpha.1",
+    "cata-variables": "^0.1.0",
     "handlebars-layouts": "^3.1.4",
     "hbs-cli": "^1.1.1",
     "http-server": "^0.11.1",

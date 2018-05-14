@@ -15,12 +15,12 @@
 
 .Nav a {
   color: var(--color-sky);
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 40em) {
   .Nav a {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
 }

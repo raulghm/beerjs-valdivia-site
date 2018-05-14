@@ -3,8 +3,18 @@
 }
 
 .Slider-body {
-  /*padding: 2px 0 0 2px;*/
   position: relative;
+}
+
+.Slider-body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-blue);
+  opacity: .2;
 }
 
 @media (min-width: 40em) {
@@ -22,17 +32,6 @@
     right: -4px;
     bottom: -4px;
     left: 2px;
-  }
-
-  .Slider-body:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-blue);
-    opacity: .2;
   }
 }
 
