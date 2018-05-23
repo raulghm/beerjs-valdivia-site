@@ -65,3 +65,13 @@
 .Footer-body {
   padding: 0 2em;
 }
+
+.Footer-credits {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.Footer-credits a {
+  opacity: .6;
+  color: var(--color-sky);
+}
