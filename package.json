@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Edición Mayo 2018",
-    "date": "Jueves 17 mayo 2018",
+    "title": "BeerJS Valdivia | Edición Junio 2018",
+    "date": "Jueves 28 mayo 2018",
     "location": "Nube Cowork Serrano 958, Valdivia",
-    "topic": "JavaScript + CSS (Arquitectura, metodologias, postcss, cssgrid, etc)",
-    "edition": "Mayo",
-    "register_link": "https://guestli.st/563484"
+    "topic": "Tema libre (proyectos, ideas o experimentos en cualquier lenguaje o tecnología)",
+    "edition": "Junio",
+    "register_link": ""
   },
   "main": "test.js",
   "scripts": {
