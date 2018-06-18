@@ -1,5 +1,7 @@
 # BeerJS Valdivia Site
 
+> Web BeerJS Valdivia, más información en http://valdivia.beerjs.cl y https://github.com/beerjs/valdivia/issues
+
 ## Setup
 
 ```
