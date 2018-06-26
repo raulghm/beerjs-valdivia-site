@@ -16,3 +16,4 @@ yarn.lock
 
 dist/assets/scripts
 dist/assets/styles
+dist/*.html
