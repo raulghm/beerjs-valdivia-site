@@ -38,6 +38,14 @@
         <p>
           Encuentro de cerveza y código
         </p>
+
+        <div class="Home-section-register">
+          {{#if meta.register_link}}
+          <a class="Button Button--lg Button--active" href="{{ meta.register_link }}" target="_blank">Regístrate</a>
+          {{else}}
+          <a class="Button Button--lg" disabled href="#">Pronto inscripciones</a>
+          {{/if}}
+        </div>
       </div>
 
       <div class="Home-down">
