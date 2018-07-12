@@ -4,13 +4,12 @@
   "description": "Encuentro de cerveza y código",
   "meta": {
     "title": "BeerJS Valdivia | Edición Julio 2018",
-    "date": "Por definir",
+    "date": "Jueves 26 de julio",
     "location": "Nube Cowork Serrano 958, Valdivia",
     "topic": "Tema libre (proyectos, ideas o experimentos en cualquier lenguaje o tecnología)",
     "edition": "Julio",
-    "register_link": ""
+    "register_link": "https://guestli.st/575067"
   },
-  "main": "test.js",
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
     "server": "npm run hbs && http-server ./dist",
