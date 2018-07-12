@@ -14,3 +14,11 @@ arrow.addEventListener('click', () => {
     behavior: 'smooth'
   })
 })
+
+const more = document.querySelector('.Button--more')
+
+more.addEventListener('click', () => {
+  document.querySelector('.Home-section--date').scrollIntoView({
+    behavior: 'smooth'
+  })
+})

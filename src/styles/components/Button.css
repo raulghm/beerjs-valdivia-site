@@ -9,6 +9,7 @@
   letter-spacing: 1px;
   opacity: .8;
   transition: all .2s ease;
+  cursor: pointer;
 }
 
 .Button--lg {
