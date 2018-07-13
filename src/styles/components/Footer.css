@@ -5,6 +5,8 @@
   padding: 2em 0;
   font-weight: lighter;
   font-family: var(--font-family-alt);
+  position: relative;
+  text-align: center;
 }
 
 .Footer .Button {

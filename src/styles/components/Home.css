@@ -1,10 +1,7 @@
-.Home {
-  text-align: center;
-}
-
 .Home-section {
+  text-align: center;
   min-height: 500px;
-  background: var(--color-black);
+  /* background: var(--color-black); */
   padding: 20px;
   display: flex;
   align-items: center;
@@ -196,8 +193,9 @@
   padding: 2em 1em;
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.6rem;
   color: var(--color-sky);
+  box-shadow: 10px 10px 0 0 color(var(--color-blue) a(10%)), -4px -4px 0 0 color(var(--color-yellow) a(60%));
+  background-color: rgba(102, 153, 204, 0.02);
 }
 
 @media (--lg-viewport) {
@@ -207,8 +205,23 @@
   }
 }
 
-.Home-section--date .Home-section-body {
-  box-shadow: 10px 10px 0 0 color(var(--color-blue) a(10%)), -4px -4px 0 0 color(var(--color-yellow) a(60%));
+.Home-section--date .Home-section-body ul {
+  font-size: 1.4rem;
+  font-family: var(--font-family-alt);
+  margin-bottom: 10px;
+}
+
+.Home-section--date .Home-section-bottom {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-yellow);
+}
+
+.Home-section--date .Home-section-bottom a {
+  border-bottom: 2px solid var(--color-yellow);
+  color: var(--color-yellow);
 }
 
 .Home-section--date h2 {
