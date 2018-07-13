@@ -6,19 +6,20 @@
     "title": "BeerJS Valdivia | Edición Julio 2018",
     "date": "Jueves 26 de julio",
     "location": "Nube Cowork Serrano 958, Valdivia",
-    "topic": "Tema libre (proyectos, ideas o experimentos en cualquier lenguaje o tecnología)",
+    "topic": "Libre (proyectos, ideas o experimentos en cualquier lenguaje o tecnología)",
     "edition": "Julio",
     "register_link": "https://guestli.st/575067"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
-    "server": "npm run hbs && http-server ./dist",
+    "serve": "live-server ./dist --wait=1000",
     "css:dev": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css -w --no-lint",
     "css:build": "suitcss ./src/styles/main.css ./dist/assets/styles/main.css --no-lint -m",
     "js:dev": "babel ./src/scripts/main.js --out-file ./dist/assets/scripts/main.js",
     "js:build": "babel ./src/scripts/main.js --out-file ./dist/assets/scripts/main.js",
-    "start": "watch 'npm run hbs && npm run js:dev && npm run css:dev' src",
-    "build": "npm run hbs && npm run css:build && npm run js:build",
+    "watch": "watch 'npm run hbs && npm run js:dev && npm run css:dev' src",
+    "start": "npm-run-all --parallel watch serve",
+    "build": "npm-run-all --parallel hbs css:build js:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -51,9 +52,7 @@
     "cata-variables": "^0.1.0",
     "handlebars-layouts": "^3.1.4",
     "hbs-cli": "^1.1.1",
-    "http-server": "^0.11.1",
-    "suitcss-preprocessor": "^4.0.0",
-    "watch": "^1.0.2"
+    "suitcss-preprocessor": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -64,6 +63,9 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.3",
+    "watch": "^1.0.2"
   }
 }
