@@ -56,7 +56,7 @@
     <section class="Home-section Home-section--next">
       <div class="Home-section-body u-inner">
         <div class="Home-section-item Home-section-item--left">
-          La idea es simple: nos reunimos cada mes a compartir una buena cerveza, hablar de JavaScript y desarrollo.
+          Nos juntamos cada mes para hablar de JavaScript y desarrollo, junto a una buena cerveza
           <br> 👌
         </div>
 
@@ -88,10 +88,14 @@
           {{/if}}
           <li>🏠 {{ meta.location }}</li>
           <li>🙊
-            <b>Tema</b>: {{ meta.topic }}</li>
+            <b>Tema del mes</b>: {{ meta.topic }}</li>
         </ul>
         {{#if meta.register_link}}
         <a class="Button Button--lg Button--active" href="{{ meta.register_link }}" target="_blank">Regístrate</a>
+
+        <div class="Home-section-bottom">
+          Asiste o <a href="https://github.com/beerjs/valdivia/issues">postula una charla</a>
+        </div>
         {{else}}
         <a class="Button Button--lg" disabled href="#">Pronto inscripciones</a>
         {{/if}}
@@ -134,8 +138,7 @@
     </div>
 
     <div class="Footer-logo">
-      <h2>{
-        <img src="assets/img/ico-mug.png" />}</h2>
+      <h2>{<img src="assets/img/ico-mug.png" />}</h2>
       <span>{{ meta.title }}</span>
     </div>
 
