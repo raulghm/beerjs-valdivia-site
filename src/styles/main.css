@@ -9,6 +9,7 @@
 @import "./components/Footer.css";
 @import "./components/Slider.css";
 @import "./components/Button.css";
+@import "./components/Card.css";
 
 :root {
   --color-black: #121a25;
@@ -55,4 +56,8 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+.img-404 {
+  max-width: 100%;
 }
