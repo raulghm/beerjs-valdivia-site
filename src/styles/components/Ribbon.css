@@ -37,16 +37,16 @@
 
 .Ribbon-text {
   transform: rotate(-90deg);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 4;
   letter-spacing: 1px;
-  margin-top: 14px;
+  margin-top: 20px;
 }
 
 @media (--md-viewport) {
   .Ribbon-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
