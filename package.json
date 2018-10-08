@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Edición Agosto 2018",
-    "date": "Jueves 23 de agosto",
+    "title": "BeerJS Valdivia | Edición octubre 2018",
+    "date": "Jueves 25 de octubre",
     "location": "Nube Cowork Serrano 958, Valdivia",
-    "topic": "Proyectos personales. Tendremos un workshop especial de impresión 3D y software modelado.",
-    "edition": "Agosto",
-    "register_link": "https://guestli.st/578424"
+    "topic": "Deep Learning para humanos | UI + Apollo | Aquí tu próxima charla",
+    "edition": "Octubre",
+    "register_link": "https://guestlist.co/events/584283"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
