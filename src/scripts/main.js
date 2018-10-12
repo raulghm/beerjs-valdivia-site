@@ -10,7 +10,7 @@ const slider = tns({
 const arrow = document.querySelector('.Home-down')
 
 arrow.addEventListener('click', () => {
-  document.querySelector('.Home-section--next').scrollIntoView({
+  document.querySelector('.Home-section--date').scrollIntoView({
     behavior: 'smooth'
   })
 })
