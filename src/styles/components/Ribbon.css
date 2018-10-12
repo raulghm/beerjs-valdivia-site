@@ -19,14 +19,12 @@
 .Ribbon-body {
   background-color: var(--color-yellow);
   width: 56px;
-  height: 115px;
   padding: 8px 0;
 }
 
 @media (min-width: 40em) {
   .Ribbon-body {
     width: 60px;
-    height: 120px;
   }
 }
 
@@ -48,5 +46,6 @@
 @media (--md-viewport) {
   .Ribbon-text {
     font-size: 1.8rem;
+    margin-top: 24px;
   }
 }

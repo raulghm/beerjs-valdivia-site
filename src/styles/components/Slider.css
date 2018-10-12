@@ -21,7 +21,7 @@
   .Slider {
     border: 1px solid var(--color-yellow);
     position: relative;
-    box-shadow: -10px -10px 0 0 color(var(--color-blue) a(10%));
+    /* box-shadow: -10px -10px 0 0 color(var(--color-blue) a(10%)); */
   }
 
   .Slider:before {
