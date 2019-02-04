@@ -3,17 +3,13 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Edición octubre 2018",
-    "date": "Jueves 25 de octubre",
+    "title": "BeerJS Valdivia | Febrero 2019",
+    "date": "Jueves 28 de Febrero",
     "location": "Nube Cowork, Serrano 958, Valdivia",
     "topic": "Charlas",
-    "talks": [
-      "Deep Learning para humanos (con tensorflow)",
-      "Apollo + UX (como mejorar la experiencia de nuestras apps)",
-      "Realidad aumentada for dummies (mini taller práctico)"
-    ],
-    "edition": "Octubre",
-    "register_link": "https://guestlist.co/events/584283"
+    "talks": [],
+    "edition": "Febrero",
+    "register_link": ""
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
