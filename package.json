@@ -9,7 +9,7 @@
     "topic": "Tema: Prácticas relacionadas a proyectos y equipos de desarrollo",
     "talks": [],
     "edition": "Febrero",
-    "register_link": ""
+    "register_link": "https://guestli.st/599313"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
