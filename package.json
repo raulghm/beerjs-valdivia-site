@@ -12,8 +12,8 @@
       "Testeando con Python + Jenkins",
       "(Por confirmar)"
     ],
-    "edition": "Febrero",
-    "register_link": "https://guestli.st/599313"
+    "edition": "Marzo",
+    "register_link": "https://guestli.st/603165"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
