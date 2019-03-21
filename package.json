@@ -4,10 +4,14 @@
   "description": "Encuentro de cerveza y código",
   "meta": {
     "title": "BeerJS Valdivia | Febrero 2019",
-    "date": "Miércoles 27 de febrero",
+    "date": "Jueves 28 de marzo",
     "location": "Nube Cowork, Serrano 958, Valdivia",
-    "topic": "Tema: Prácticas relacionadas a proyectos y equipos de desarrollo",
-    "talks": [],
+    "topic": "Tema: Testing en la vida real",
+    "talks": [
+      "Testing en React Native",
+      "Testeando con Python + Jenkins",
+      "(Por confirmar)"
+    ],
     "edition": "Febrero",
     "register_link": "https://guestli.st/599313"
   },
