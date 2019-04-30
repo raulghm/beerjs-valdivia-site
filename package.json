@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Febrero 2019",
-    "date": "Jueves 28 de marzo",
+    "title": "BeerJS Valdivia | Mayo 2019",
+    "date": "Jueves 2 de mayo",
     "location": "Nube Cowork, Serrano 958, Valdivia",
     "topic": "Tema: Testing en la vida real",
     "talks": [
       "Testing en React Native",
       "Testeando con Python + Jenkins",
-      "(Por confirmar)"
+      "(Si quieres presentar, esta es tu oportunidad!)"
     ],
-    "edition": "Marzo",
-    "register_link": "https://guestli.st/603165"
+    "edition": "Mayo",
+    "register_link": "https://guestli.st/610104"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
