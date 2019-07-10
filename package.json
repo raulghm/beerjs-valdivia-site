@@ -8,7 +8,10 @@
     "date": "Jueves 11 de julio",
     "location": "Nube Cowork, Serrano 958, Valdivia",
     "topic": "Tema: Por definir",
-    "talks": [],
+    "talks": [
+      "Comunicación de microservicios mediante message brokers",
+      "Storytelling - como encantar con nuestros productos"
+    ],
     "register_link": "https://guestli.st/617673"
   },
   "scripts": {
