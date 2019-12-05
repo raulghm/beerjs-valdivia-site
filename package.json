@@ -3,16 +3,13 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Julio 2019",
-    "edition": "Julio",
-    "date": "Jueves 11 de julio",
+    "title": "BeerJS Valdivia | Diciembre 2019",
+    "edition": "Diciembre",
+    "date": "Miércoles 18 de diciembre",
     "location": "Nube Cowork, Serrano 958, Valdivia",
-    "topic": "Tema: Buenas prácticas en el desarrollo",
-    "talks": [
-      "Comunicación de microservicios mediante message brokers",
-      "Storytelling - como encantar con nuestros productos"
-    ],
-    "register_link": "https://guestli.st/617673"
+    "topic": "Tema: Por confirmar",
+    "talks": [],
+    "register_link": ""
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
