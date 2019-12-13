@@ -8,8 +8,8 @@
     "date": "Miércoles 18 de diciembre",
     "location": "Nube Cowork, Serrano 958, Valdivia",
     "topic": "Tema: Por confirmar",
-    "talks": [],
-    "register_link": ""
+    "talks": ["Cómo hacer volar código Python con Cython", "Construyendo una API en Node.js"],
+    "register_link": "https://guestli.st/637599"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
