@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Diciembre 2019",
-    "edition": "Diciembre",
-    "date": "Miércoles 18 de diciembre",
-    "location": "Nube Cowork, Serrano 958, Valdivia",
-    "topic": "2 charlas confirmadas",
-    "talks": ["Cómo hacer volar código Python con Cython", "Construyendo una API en Node.js"],
-    "register_link": "https://guestli.st/637599"
+    "title": "BeerJS Valdivia | Febrero 2020",
+    "edition": "Febrero",
+    "date": "Jueves 27 de febrero",
+    "location": "Nube Cowork, Los laureles 075, piso 2, Valdivia",
+    "topic": "Charla confirmada (por ahora)",
+    "talks": ["TDD en JavaScript"],
+    "register_link": "https://guestli.st/644970"
   },
   "scripts": {
     "hbs": "hbs --output ./dist --data ./package.json --helper handlebars-layouts --partial ./src/layouts/default.hbs -- ./src/pages/*.hbs",
