@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Encuentro de cerveza y código",
   "meta": {
-    "title": "BeerJS Valdivia | Febrero 2020",
+    "title": "BeerJS Valdivia | 27 febrero 2020 | 19 hrs.",
     "edition": "Febrero",
-    "date": "Jueves 27 de febrero",
-    "location": "Nube Cowork, Los laureles 075, piso 2, Valdivia",
-    "topic": "Charla confirmada (por ahora)",
-    "talks": ["TDD en JavaScript"],
+    "date": "Jueves 27 febrero, 19:00 hrs.",
+    "location": "Nube Cowork, Los laureles 075, piso 2, Isla Teja, Valdivia",
+    "topic": "Charlas confirmada",
+    "talks": ["TDD en JavaScript", "Conociendo Arduino y sus aplicaciones en la vida real", "Debugeando tu búsqueda de trabajo"],
     "register_link": "https://guestli.st/644970"
   },
   "scripts": {
