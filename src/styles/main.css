@@ -29,6 +29,8 @@
   --font-family-primary: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-family-alt: "Roboto Mono", Helvetica, Arial, sans-serif;
   --font-family-default: Helvetica, Arial, sans-serif;
+  --border-radius-base: 4px;
+  --border-radius-lg: 8px;
 }
 
 body {

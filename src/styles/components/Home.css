@@ -64,13 +64,13 @@
   margin-top: 40px;
   opacity: 0;
   transform: translateY(10px);
-	animation: anim-fadeIn 1s 1s forwards;
+  animation: anim-fadeIn 1s 1s forwards;
 }
 
 @keyframes anim-fadeIn {
   100% {
     opacity: 1;
-		transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -125,6 +125,14 @@
   .Home-section p {
     font-size: 1.6rem;
   }
+}
+
+.Home-section-body > ul > ul > li {
+  margin-bottom: 5rem;
+}
+
+.Home-section-body > ul > ul > li b {
+  color: var(--color-yellow);
 }
 
 .Home-section .Home-section-meta {
@@ -241,7 +249,7 @@
 
 .Home-section--date h2 {
   text-transform: uppercase;
-  margin: 0 1em .6em;
+  margin: 0 1em 0.6em;
   font-size: 2.6rem;
 }
 

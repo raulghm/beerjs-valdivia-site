@@ -8,7 +8,43 @@
     "date": "Jueves 27 febrero, 19:00 hrs.",
     "location": "Nube Cowork, Los laureles 075, piso 2, Isla Teja, Valdivia",
     "topic": "Charlas confirmadas",
-    "talks": ["TDD en JavaScript", "Conociendo Arduino y sus aplicaciones en la vida real", "Debugeando tu búsqueda de trabajo"],
+    "talks": [
+      {
+        "name": "TDD en JavaScript",
+        "speaker": "@Manuelabarca",
+        "content": [
+          "Que es TDD",
+          "Por que TDD",
+          "Como me cambio TDD",
+          "TDD en la práctica"
+        ]
+      },
+      {
+        "name": "Conociendo Arduino y sus aplicaciones en la vida real",
+        "speaker": "@Konredus",
+        "content": [
+          "Que es Arduino",
+          "Distintas placas bajo el mismo codigo",
+          "Una comunidad Enorme de Usuarios",
+          "Filosofia Open Source",
+          "Donde se utiliza Arduino",
+          "Ejemplos personales de aplicacion",
+          "Una pequeña demo de como se program una luz led y despues un semaforo"
+        ]
+      },
+      {
+        "name": "Debugeando tu búsqueda de trabajo",
+        "speaker": "@cknopel",
+        "content": [
+          "Trabajando fuera de Chile ¿Qué necesito?",
+          "Tips para que te encuentren",
+          "Skills básicas necesarias",
+          "Top trends",
+          "Tips procesos de reclutamiento",
+          "¿Remoto o presencial?"
+        ]
+      }
+    ],
     "register_link": "https://guestli.st/644970"
   },
   "scripts": {
