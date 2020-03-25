@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+
+/* uncss:ignore start */
+body {
+	background-color: #1a202d;
+	font-family: 'Roboto Mono';
+	@apply text-white;
+}
+
+h1 {
+	@apply text-2xl;
+}
+
+h2 {
+	@apply text-xl;
+}
+
+h3 {
+	@apply text-lg;
+}
+
+.Hero {
+	position: relative;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+
+.Hero-title {
+	text-transform: uppercase;
+	opacity: .8;
+	user-select: none;
+	position: relative;
+	z-index: 10;
+	font-family: 'Source Sans Pro';
+}
+
+.Hero h1 {
+	font-size: 14vw;
+	font-weight: bold;
+	line-height: .8;
+	letter-spacing: 2px;
+}
+
+.Hero h1 span:nth-child(2) {
+	color: #f8d22d;
+	margin-left: -10px;
+}
+
+@media (min-width: 640px) {
+	.Hero h1 span:nth-child(2) {
+		margin-left: -30px;
+	}
+}
+
+.Hero h2 {
+	font-size: 8vw;
+	font-weight: bold;
+	line-height: .8;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+.Hero h3 {
+	font-family: 'Roboto Mono';
+	display: inline-block;
+	letter-spacing: 2px;
+	line-height: 1;
+	font-size: .8rem;
+	margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+	.Hero h3 {
+		font-size: 1rem;
+		padding: 10px 14px;
+		border: 2px solid #fff;
+		margin-top: 60px;
+	}
+}
+
+.Hero-next {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .9rem;
+	text-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+
+.Hero-images {
+	background-image: url(/dist/images/bgs/0.jpg);
+	background-size: cover;
+	background-position: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 80vh;
+}
+
+.Hero-images:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 80vh;
+	background-color: #444;
+	opacity: .4;
+}
+
+.Hero-images img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition: opacity 1s ease;
+}
+
+.Hero-cornerTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 10vw solid #1a202c;
+	border-right: 10vw solid transparent;
+}
+
+.Hero-cornerBottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10vw solid #1a202c;
+	border-left: 10vw solid transparent;
+}
+
+.Socialbar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2em;
+	text-align: center;
+	z-index: 1;
+}
+
+.Socialbar:hover a {
+	opacity: 1;
+}
+
+.Socialbar a {
+	display: block;
+	margin-bottom: 1rem;
+	opacity: 0.9;
+}
+
+.Socialbar a:hover svg,
+.Follow a:hover svg {
+	fill: #f8d22d;
+}
+
+.Socialbar svg,
+.Follow svg {
+	width: 2rem;
+	fill: #fff;
+}
+/* uncss:ignore end */
+
+@tailwind utilities;

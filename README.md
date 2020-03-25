@@ -2,22 +2,15 @@
 
 > Web BeerJS Valdivia, más información en http://valdivia.beerjs.cl y https://github.com/beerjs/valdivia/issues
 
-## Setup
 
-```
-npm run install
-```
+## Install
+
+`yarn`
 
 ## Dev
 
-```
-npm run dev
-```
-
-Check directly the html files in browser
+`yarn run start`
 
 ## Build
 
-```
-npm run build
-```
+`yarn run build`
