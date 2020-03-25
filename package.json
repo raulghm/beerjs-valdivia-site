@@ -18,7 +18,6 @@
     "build:js": "run-s jsmin",
     "build:images:dev": "cpy --cwd=src/images --parents '**/*' '../../dist/images'",
     "build:images": "run-s imagemin",
-    "build:workbox": "workbox generateSW workbox-config.js",
     "watch:css": "onchange \"src/css\" -- run-s postcss",
     "watch:js": "onchange \"src/js\" -- run-s build:js",
     "watch:images": "onchange \"src/images\" -- run-s build:images:dev",
