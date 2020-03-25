@@ -74,19 +74,6 @@
     "semi": false,
     "arrowParens": "avoid"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "**/*.js": [
-      "npm run lint",
-      "npm run format",
-      "git add"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
