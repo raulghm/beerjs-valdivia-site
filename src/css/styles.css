@@ -71,6 +71,8 @@ h3 {
 	line-height: 1;
 	font-size: .8rem;
 	margin-top: 20px;
+	padding: 4px 6px;
+	animation: anim-glow 2s ease infinite;
 }
 
 @media (min-width: 640px) {
@@ -79,6 +81,15 @@ h3 {
 		padding: 10px 14px;
 		border: 2px solid #fff;
 		margin-top: 60px;
+	}
+}
+
+@keyframes anim-glow {
+	0% {
+		box-shadow: 0 0 4px #fff;
+	}
+	100% {
+		box-shadow: 0 0 10px 8px transparent;
 	}
 }
 
