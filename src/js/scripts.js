@@ -1,7 +1,8 @@
 /* eslint-disable no-undef */
-;(function () {
+; (function () {
   // Set local elements
   const doc = document.documentElement
+  const btnMeetup = document.querySelector('.btn-meetup')
 
   // Remove no-js class
   doc.classList.remove('no-js')
@@ -26,4 +27,28 @@
     sr.reveal('.Hero', slide)
     sr.reveal('.What', { ...slide, origin: 'bottom', delay: 800 })
   }, 200)
+
+  btnMeetup.addEventListener('click', function () {
+    Swal.fire({
+      html: `
+        <div class="p-4">
+          <h2 class="mb-4">Estás a punto de ingresar a BeerJS Valdivia 🍺 edición abril 2020.</h2>
+          <p class="mb-4">Es un meetup normal y abierto en "jit.si" por lo que te solicitamos lo siguiente:</p>
+
+          <ol class="text-sm p-2 list-decimal text-left ml-6 mb-4">
+            <li>Mantener tu micrófono muteado.</li>
+            <li>Ingresar tu nombre para identificarte (settings).</li>
+            <li>Si quieres hablar o intervenir con algún comentario lo puedes hacer levantando la mano (icono).</li>
+            <li>Si tienes dudas puedes usar el chat o video si es necesario.</li>
+            <li>Tener tu cerveza heladita a mano y disfrutar ;)</li>
+          </ol>
+
+          <div>Contraseña: <b>8347gr7843</b></div>
+        </div>
+      `,
+      confirmButtonText: 'Ingresar 👉'
+    }).then(() => {
+      window.open('https://meet.jit.si/beerjsvaldivia', '_blank')
+    })
+  })
 })()

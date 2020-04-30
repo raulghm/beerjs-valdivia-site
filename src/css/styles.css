@@ -72,6 +72,7 @@ h3 {
 	font-size: .8rem;
 	margin-top: 20px;
 	padding: 4px 6px;
+	cursor: pointer;
 }
 
 @media (min-width: 640px) {
