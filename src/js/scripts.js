@@ -8,8 +8,8 @@
   doc.classList.remove('no-js')
   doc.classList.add('js')
 
-  const random = Math.floor(Math.random() * (8 - 0 + 1) + 0);
-  document.querySelector('.Hero-images').style.backgroundImage = `url(/dist/images/bgs/${random}.jpg)`;
+  const random = Math.floor(Math.random() * (8 - 0 + 1) + 0)
+  document.querySelector('.Hero-images').style.backgroundImage = `url(/dist/images/bgs/${random}.jpg)`
 
   // Reveal animations
   setTimeout(function () {
