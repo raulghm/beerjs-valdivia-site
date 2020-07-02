@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-; (function () {
+;(function () {
   // Set local elements
   const doc = document.documentElement
   const btnMeetup = document.querySelector('.btn-meetup')
@@ -9,7 +9,9 @@
   doc.classList.add('js')
 
   const random = Math.floor(Math.random() * (8 - 0 + 1) + 0)
-  document.querySelector('.Hero-images').style.backgroundImage = `url(/dist/images/bgs/${random}.jpg)`
+  document.querySelector(
+    '.Hero-images'
+  ).style.backgroundImage = `url(/dist/images/bgs/${random}.jpg)`
 
   // Reveal animations
   setTimeout(function () {
@@ -32,18 +34,18 @@
     Swal.fire({
       html: `
         <div class="p-4">
-          <h2 class="mb-4">Estás a punto de ingresar a BeerJS Valdivia 🍺 edición mayo 2020.</h2>
+          <h2 class="mb-4">Estás a punto de ingresar a BeerJS Valdivia 🍺 edición junio 2020.</h2>
           <p class="mb-4">Es un meetup normal y abierto en "jit.si" por lo que te solicitamos lo siguiente:</p>
 
           <ol class="text-sm p-2 list-decimal text-left ml-6 mb-4">
-            <li>Mantener tu micrófono muteado.</li>
+            <li>Mantener tu micrófono muteado y video apagado.</li>
             <li>Ingresar tu nombre para identificarte (settings).</li>
             <li>Si quieres hablar o intervenir con algún comentario lo puedes hacer levantando la mano (icono).</li>
-            <li>Si es necesario puedes usar el chat o video.</li>
+            <li>Si es necesario puedes usar el chat.</li>
             <li>Tener tu cerveza heladita a mano y disfrutar ;)</li>
           </ol>
 
-          <div>Contraseña: <b>8347gr7843</b></div>
+          <div>Contraseña: <b>9348758</b></div>
         </div>
       `,
       confirmButtonText: 'Ingresar 👉'
