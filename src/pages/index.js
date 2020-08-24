@@ -206,7 +206,25 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-2">
-              <Input placeholder="tu@email.com" />
+              <div id="mc_embed_signup">
+                <form action="https://beerjs.us17.list-manage.com/subscribe/post?u=9b46314bf820d031baa115be0&amp;id=b4e86ad395" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <div className="relative">
+                        <input className="w-full h-12 p-4 pr-16 rounded-lg outline-none bg-background required email" placeholder="tu@email.com" type="email" name="EMAIL" id="mce-EMAIL" />
+                        <button className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-lg outline-none bg-primary">
+                          <Icon name="arrow-right" color="#1A202D" />
+                        </button>
+                      </div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style={{ display: 'none' }}></div>
+                      <div class="response" id="mce-success-response" style={{ display: 'none' }}></div>
+                    </div>
+                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_9b46314bf820d031baa115be0_b4e86ad395" tabindex="-1" value="" /></div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
