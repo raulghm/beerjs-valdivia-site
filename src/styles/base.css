@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+
+/* uncss:ignore start */
+body {
+	background-color: #1a202d;
+	background-image: url(../assets/images/bg-lines.svg);
+	@apply text-dark;
+	@apply font-body;
+	@apply text-sm;
+}
+
+@screen md {
+  body {
+    background-position: center 10%;
+  }
+}
+
+h1 {
+	@apply font-display;
+	@apply text-2xl;
+}
+
+h2 {
+	@apply font-display;
+	@apply text-xl;
+}
+
+h3 {
+	@apply font-display;
+	@apply text-lg;
+}
+
+.heading {
+  @apply text-4xl;
+  @apply uppercase;
+  @apply font-semibold;
+  @apply text-light;
+  @apply font-display;
+  letter-spacing: 2px;
+}
+
+.title {
+  @apply uppercase;
+  @apply font-semibold;
+  @apply text-light;
+  @apply font-display;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 1.8rem;
+}
+
+.label {
+  @apply uppercase;
+  @apply text-primary;
+  @apply font-display;
+  @apply font-semibold;
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
+.button {
+  @apply bg-primary;
+  @apply text-background;
+  @apply py-3;
+  @apply px-10;
+  @apply font-display;
+  @apply rounded-full;
+  @apply uppercase;
+  @apply font-semibold;
+  @apply text-center;
+  @apply cursor-pointer;
+  @apply select-none;
+  letter-spacing: 2px;
+}
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  @apply px-6;
+}
+
+@screen md {
+  main:before {
+    content: '';
+    background-image: url(/images/bg.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 1100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .4;
+  }
+}
+
+footer {
+  max-width: 940px;
+  margin: 0 auto;
+  @apply px-6;
+}
+/* uncss:ignore end */
+
+@tailwind utilities;

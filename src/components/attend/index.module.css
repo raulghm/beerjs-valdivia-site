@@ -1,0 +1,55 @@
+.attend {
+  @apply rounded-lg;
+  @apply py-2;
+  @apply pl-4;
+  @apply pr-2;
+  @apply bg-secondary;
+  @apply flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  @apply m-6;
+  @apply justify-between;
+  @apply items-center;
+}
+
+@screen sm {
+  .attend {
+    position: fixed;
+    left: auto;
+  }
+}
+
+.attend h4 {
+  min-width: 4rem;
+  height: 3rem;
+  @apply px-2;
+}
+
+@screen md {
+  .attend h4 {
+    height: 4rem;
+  }
+}
+
+.attend h4 div {
+  @apply font-bold;
+  letter-spacing: 1px;
+}
+
+.attendHeading {
+  @apply text-primary;
+  @apply uppercase;
+  @apply font-semibold;
+  @apply font-display;
+  letter-spacing: 2px;
+  line-height: 1.3;
+}
+
+@screen md {
+  .attendHeading {
+    @apply text-3xl;
+  }
+}

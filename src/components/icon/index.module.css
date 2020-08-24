@@ -1,0 +1,43 @@
+.socialbar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2em;
+	text-align: center;
+  z-index: 1;
+}
+
+@screen lg {
+  .socialbar {
+    @apply block;
+  }
+}
+
+.socialbar:hover a {
+	opacity: 1;
+}
+
+.socialbar a {
+	display: block;
+	margin-bottom: 1rem;
+	opacity: 0.9;
+}
+
+.socialbar a:hover svg {
+  fill: #d0b230;
+}
+
+.socialbar svg {
+	width: 2rem;
+	fill: #bec5cc;
+}
+
+.socialbarLine {
+	height: 100px;
+	width: 2px;
+	background-color: #fff;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: inline-block;
+	margin-right: 8px;
+}

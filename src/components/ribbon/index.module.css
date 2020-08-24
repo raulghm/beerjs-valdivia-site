@@ -1,0 +1,43 @@
+/*
+Rotate text and height adjustment from:
+https://stackoverflow.com/questions/16301625/rotated-elements-in-css-that-affect-their-parents-height-correctly/47860039#47860039 */
+
+.ribbon {
+  @apply bg-primary;
+  @apply inline-block;
+  @apply rounded-lg;
+  @apply text-secondary;
+  @apply py-2;
+  @apply text-center;
+  @apply font-display;
+  @apply font-semibold;
+  width: 56px;
+  min-height: 100px;
+}
+
+.ribbon small {
+  @apply uppercase;
+  font-size: .2rem;
+}
+
+.ribbonWrapper {
+  display: table;
+  margin-left: 18px;
+}
+
+.ribbonInner {
+  padding: 50% 0;
+  height: 0;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.ribbonContent {
+  @apply uppercase;
+  @apply font-bold;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-100%);
+  margin-top: -50%;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}

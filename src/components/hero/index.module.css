@@ -1,0 +1,141 @@
+.hero {
+	position: relative;
+	min-height: 400px;
+	height: 64vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  text-shadow: 0 0 1px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+@screen md {
+  .hero {
+    height: 84vh;
+  }
+}
+
+.heroTitle {
+	text-transform: uppercase;
+	opacity: .8;
+	user-select: none;
+	position: relative;
+	z-index: 10;
+}
+
+.hero h1 {
+	font-size: 18vw;
+	font-weight: bold;
+	line-height: .8;
+  letter-spacing: 2px;
+  @apply text-white;
+}
+
+@screen md {
+  .hero h1 {
+    font-size: 14vw;
+  }
+}
+
+.hero h1 span:nth-child(2) {
+	color: #f8d22d;
+	margin-left: -2px;
+}
+
+@media (min-width: 640px) {
+	.hero h1 span:nth-child(2) {
+		margin-left: -4px;
+	}
+}
+
+.hero h2 {
+	font-size: 10vw;
+	font-weight: bold;
+	line-height: .8;
+	letter-spacing: 2px;
+  margin-top: 10px;
+  @apply text-light;
+}
+
+@screen md {
+  .hero h2 {
+    font-size: 8vw;
+  }
+}
+
+.hero h3 {
+	display: inline-block;
+	letter-spacing: 2px;
+	line-height: 1;
+	font-size: .8rem;
+	margin-top: 1rem;
+	padding: 4px 6px;
+}
+
+@media (min-width: 640px) {
+	.hero h3 {
+		font-size: 1rem;
+		padding: 10px 14px;
+		margin-top: 1rem;
+	}
+}
+
+.heroNext {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+
+.heroImages {
+	background-image: url(/dist/images/bgs/0.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 84vh;
+	opacity: .4;
+}
+
+.heroImages:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 400px;
+	background: linear-gradient(to bottom, transparent, #1a1f2d);
+}
+
+.heroImages img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition: opacity 1s ease;
+}
+
+.heroCornerTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 10vw solid #1a202c;
+	border-right: 10vw solid transparent;
+}
+
+.heroCornerBottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10vw solid #1a202c;
+	border-left: 10vw solid transparent;
+}
