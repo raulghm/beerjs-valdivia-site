@@ -9,11 +9,11 @@ function Attend() {
         <div className="text-sm">Agosto . 19:00 hrs</div>
       </div>
       <div className="flex flex-row ml-4">
-        <a target="_blank" href="https://meet.jit.si/beerjsvaldivia">
+        {/* <a target="_blank" href="https://meet.jit.si/beerjsvaldivia">
           <h4 className="flex items-center justify-center rounded-lg cursor-pointer bg-primary">
             <div className="p-2 text-xl title text-background">Ingresar al meetup</div>
           </h4>
-        </a>
+        </a> */}
       </div>
     </div >
   )
