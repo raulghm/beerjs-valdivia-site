@@ -5,8 +5,8 @@ function Attend() {
   return (
     <div className={styles.attend}>
       <div>
-        <div className={styles.attendHeading}>Jueves . 27</div>
-        <div className="text-sm">Agosto . 19:00 hrs</div>
+        {/* <div className={styles.attendHeading}>Próx. edición</div> */}
+        <div className="text-sm">Próxima edición por confirmar 🍺</div>
       </div>
       <div className="flex flex-row ml-4">
         {/* <a target="_blank" href="https://meet.jit.si/beerjsvaldivia">

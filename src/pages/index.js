@@ -39,7 +39,7 @@ export default function Home() {
 
         <div>
           {/* Speakers */}
-          <div className="mb-6 label">Charlas de esta edición</div>
+          <div className="mb-6 label">Charlas edición Agosto</div>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="md:mt-4">
               <div className="mb-2 text-lg text-primary">
@@ -90,7 +90,7 @@ export default function Home() {
 
         {/* About */}
         <div className="grid gap-6 mt-40 md:grid-cols-2">
-          <div className="px-6 py-8 border-2 rounded-xl bg-background border-primary">
+          <div className="p-6 border-2 rounded-xl bg-background border-primary">
             <div className="label">Sobre</div>
             <div className="mt-1 mb-2 title">BeerJS Valdivia</div>
             <div>
