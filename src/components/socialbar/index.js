@@ -5,7 +5,7 @@ function Socialbar() {
   return (
     <div className={styles.socialbar}>
       <div>
-        <Ribbon month="Agosto" />
+        <Ribbon month="Octubre" />
       </div>
 
       <div className={styles.socialbarLine}></div>

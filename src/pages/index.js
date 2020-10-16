@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import { Socialbar, Hero, Attend, Card, Icon, Input } from '../components'
+import { Socialbar, Hero, Attend, Card, Icon } from '../components'
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>BeerJS Valdivia . 27 agosto 2020 . 19 horas</title>
+        <title>BeerJS Valdivia . 29 octubre 2020 . 19 horas</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Encuentro de cerveza y código" />
@@ -39,26 +38,26 @@ export default function Home() {
 
         <div>
           {/* Speakers */}
-          <div className="mb-6 label">Charlas edición Agosto</div>
+          <div className="mb-6 label">Charlas edición octubre</div>
+
           <div className="grid gap-6 md:grid-cols-2">
             <div className="md:mt-4">
               <div className="mb-2 text-lg text-primary">
-                UX Research no es sólo cosa de UXs
+                Poniendo los efectos secundarios donde corresponden con RxJS en React
               </div>
               <div>
-                En esta charla conversaremos sobre la importancia de realizar
-                investigación de la experiencia de usuario en los equipos de productos,
-                y les compartiré momentos y actividades clave donde otros roles como los
-                desarrolladores podrían involucrarse y por qué.
+                Cómo podemos utilizar RxJS para modelar las interacciones y efectos
+                secundarios en nuestras aplicaciones de React.
               </div>
             </div>
 
             <div className="md:order-first">
               <Card
-                avatar="/images/duni.jpg"
-                name="Dunieska Castañeda"
-                job="Senior UX Researcher en LATAM Airlines"
-                linkedin="https://www.linkedin.com/in/dunieska-castañeda"
+                avatar="https://pbs.twimg.com/profile_images/1262890943222611968/kwWq7pGO.jpg"
+                name="Osman Cea"
+                job="Software Architect en Cornershop"
+                web="https://daslaf.dev"
+                twitter="https://twitter.com/daslaf"
               />
             </div>
           </div>
@@ -66,23 +65,26 @@ export default function Home() {
           <div className="grid gap-6 mt-6 md:grid-cols-2">
             <div className="mt-4 md:text-right">
               <div className="mb-2 text-lg text-primary">
-                Por qué los Design Systems fallan y cómo hacerlos funcionar
+                Clojure 101 para Javacripters
               </div>
               <div>
-                Los sistemas de diseño son una inversión, se requiere tiempo y recursos
-                para construirlos y mantenerlos, y por eso muchas veces fallan.
-                Revisaremos estrategias sobre como abordar, diseñar y construir un
-                sistema de diseño efectivo, que perdure en el tiempo y nos asegure
-                utilidad verdadera.
+                Clojure es un lenguaje funcional y tremendamente flexible que ha ganado
+                bastante tracción tanto para el desarrollo backend como en el frontend,
+                y con grandes casos de exito como Wallmart y Attlassian. Aprenderlo
+                puede ser intimidante en un principio, pero tal como su creador comenta,
+                "es un lenguaje simple con alto potencial".
               </div>
             </div>
 
             <div>
               <Card
-                avatar="/images/franco.jpg"
-                name="Franco Moya"
-                job="Product Designer & UX Strategist en Finalis"
-                linkedin="https://www.linkedin.com/in/iamravenous"
+                avatar="https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/465403/604760ab-9769-4d8d-8641-f67ffbe2af3f.jpeg"
+                name="Matías Hernández A."
+                job="Senior Software Engineer en Moduscreate.com e instructor en egghead.io"
+                web="https://matiashernandez.dev"
+                twitter="https://twitter.com/matiasfha"
+                linkedin="https://linkedin.com/in/mhernand"
+
               />
             </div>
           </div>

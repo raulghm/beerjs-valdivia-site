@@ -11,6 +11,7 @@ import Beer from './svg/beer'
 import Quote from './svg/quote'
 import Plane from './svg/plane'
 import ArrowRight from './svg/arrow-right'
+import Web from './svg/web'
 
 const Icon = props => {
   const size = props.size ? props.size : 24
@@ -32,7 +33,8 @@ const Icon = props => {
     beer: <Beer {...params} />,
     quote: <Quote {...params} />,
     plane: <Plane {...params} />,
-    'arrow-right': <ArrowRight {...params} />
+    'arrow-right': <ArrowRight {...params} />,
+    web: <Web {...params} />
   }
 
   return icon[props.name]

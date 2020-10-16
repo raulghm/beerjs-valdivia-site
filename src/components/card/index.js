@@ -26,6 +26,11 @@ function Card(props) {
               <Icon name="github" size={18} />
             </a>
           )}
+          {props.web && (
+            <a href={props.web} target="_blank">
+              <Icon name="web" size={18} />
+            </a>
+          )}
         </div>
       </div>
     </div>
