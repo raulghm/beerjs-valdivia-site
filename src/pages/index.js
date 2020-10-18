@@ -43,7 +43,7 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             <div className="md:mt-4">
               <div className="mb-2 text-lg text-primary">
-                Poniendo los efectos secundarios donde corresponden con RxJS en React
+                Los efectos secundarios donde corresponden con RxJS en React
               </div>
               <div>
                 Cómo podemos utilizar RxJS para modelar las interacciones y efectos
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="grid gap-6 mt-6 md:grid-cols-2">
             <div className="mt-4 md:text-right">
               <div className="mb-2 text-lg text-primary">
-                Clojure 101 para Javacripters
+                Clojure 101 para JavaScripters
               </div>
               <div>
                 Clojure es un lenguaje funcional y tremendamente flexible que ha ganado
