@@ -90,6 +90,22 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Promo */}
+        <div className="grid gap-6 mt-40">
+          <div className="p-6 rounded-xl bg-secondary">
+            <div className="label">Promo Barbudo Growler</div>
+            <div className="mt-1 mb-2 title">🍺 4 Pack BeerJS Valdivia</div>
+            <div>
+              Junto a la tienda <b class="text-white">Barbudo Growler</b> hemos creado
+              un pack especial con 4 exquisitas cervezas en lata para disfrutar el día del evento,
+              <a class="text-primary" target="_blank" href="https://barbudogrowler.cl/producto/pack-beerjs-valdivia/"> ir a la Tienda 👈</a>
+              <div className="mt-2 text-light">
+                ¡Ingresa el código <code><b>PYM6BA7P</b></code> al final de tu compra y listo!
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* About */}
         <div className="grid gap-6 mt-40 md:grid-cols-2">
           <div className="p-6 border-2 rounded-xl bg-background border-primary">
@@ -98,7 +114,7 @@ export default function Home() {
             <div>
               Desde una hermosa ciudad al sur de Chile, entre lúpulos y código nace
               BeerJS Valdivia, con la idea de crear comunidad alrededor del <span className="line-through">javascript</span> software.
-              Inicialmente desde el espacio Nube Cowork en forma presencial, ahora nos reunimos a la distanca debido a la
+              Inicialmente desde el espacio Nube Cowork en forma presencial, ahora nos reunimos a la distancia debido a la
               situación sanitaria. <br />
               <div className="mt-2 text-light">🍺 No es requerimiento alguno consumir alcohol para participar</div>
             </div>
@@ -132,7 +148,7 @@ export default function Home() {
                   Charlas
                 </div>
                 <div>
-                  Presentaciones de 25 minutos cada una, sobre diferentes tematicas
+                  Presentaciones de 25 minutos cada una, sobre diferentes temáticas
                 </div>
               </div>
             </div>
