@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import { Socialbar, Hero, Attend, Card, Icon } from '../components'
+import { data } from '../../package.json'
+
+console.log("data", data)
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>BeerJS Valdivia . 29 octubre 2020 . 19 horas</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>BeerJS Valdivia . {data.day} {data.edition} {data.year} . {data.hour}hrs</title>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Encuentro de cerveza y código" />
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700,900" rel="stylesheet"></link>
@@ -38,73 +41,70 @@ export default function Home() {
 
         <div>
           {/* Speakers */}
-          <div className="mb-6 label">Charlas edición octubre</div>
+          <div className="mb-6 label">Charlas edición {data.edition}</div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="md:mt-4">
-              <div className="mb-2 text-lg text-primary">
-                Los efectos secundarios donde corresponden con RxJS en React
+          {data.speakers[0] && (
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="md:mt-4">
+                <div className="mb-2 text-lg text-primary">{data.speakers[0].talk}</div>
+                <div className="break-words">{data.speakers[0]['talk-details']}</div>
               </div>
+
+              <div className="md:order-first">
+                <Card
+                  avatar={data.speakers[0].avatar}
+                  name={data.speakers[0].name}
+                  position={data.speakers[0].position}
+                  company={data.speakers[0].company}
+                  web={data.speakers[0].rrss.web}
+                  twitter={data.speakers[0].rrss.twitter}
+                  github={data.speakers[0].rrss.github}
+                  linkedin={data.speakers[0].rrss.linkedin}
+                  instagram={data.speakers[0].rrss.instagram}
+                />
+              </div>
+            </div>
+          )}
+
+          {data.speakers[1] && (
+            <div className="grid gap-6 mt-6 md:grid-cols-2">
+              <div className="mt-4 md:text-right">
+                <div className="mb-2 text-lg text-primary">{data.speakers[1].talk}</div>
+                <div className="break-words">{data.speakers[1]['talk-details']}</div>
+              </div>
+
               <div>
-                Cómo podemos utilizar RxJS para modelar las interacciones y efectos
-                secundarios en nuestras aplicaciones de React.
+                <Card
+                  avatar={data.speakers[1].avatar}
+                  name={data.speakers[1].name}
+                  position={data.speakers[1].position}
+                  company={data.speakers[1].company}
+                  web={data.speakers[1].rrss.web}
+                  twitter={data.speakers[1].rrss.twitter}
+                  github={data.speakers[1].rrss.github}
+                  linkedin={data.speakers[1].rrss.linkedin}
+                  instagram={data.speakers[1].rrss.instagram}
+                />
               </div>
             </div>
-
-            <div className="md:order-first">
-              <Card
-                avatar="https://pbs.twimg.com/profile_images/1262890943222611968/kwWq7pGO.jpg"
-                name="Osman Cea"
-                job="Software Architect en Cornershop"
-                web="https://daslaf.dev"
-                twitter="https://twitter.com/daslaf"
-              />
-            </div>
-          </div>
-
-          <div className="grid gap-6 mt-6 md:grid-cols-2">
-            <div className="mt-4 md:text-right">
-              <div className="mb-2 text-lg text-primary">
-                Clojure 101 para JavaScripters
-              </div>
-              <div>
-                Clojure es un lenguaje funcional y tremendamente flexible que ha ganado
-                bastante tracción tanto para el desarrollo backend como en el frontend,
-                y con grandes casos de exito como Wallmart y Attlassian. Aprenderlo
-                puede ser intimidante en un principio, pero tal como su creador comenta,
-                "es un lenguaje simple con alto potencial".
-              </div>
-            </div>
-
-            <div>
-              <Card
-                avatar="https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/465403/604760ab-9769-4d8d-8641-f67ffbe2af3f.jpeg"
-                name="Matías Hernández A."
-                job="Senior Software Engineer en Moduscreate.com e instructor en egghead.io"
-                web="https://matiashernandez.dev"
-                twitter="https://twitter.com/matiasfha"
-                linkedin="https://linkedin.com/in/mhernand"
-
-              />
-            </div>
-          </div>
+          )}
         </div>
 
         {/* Promo */}
-        <div className="grid gap-6 mt-40">
+        {/* <div className="grid gap-6 mt-40">
           <div className="p-6 rounded-xl bg-secondary">
             <div className="label">Promo Barbudo Growler</div>
             <div className="mt-1 mb-2 title">🍺 4 Pack BeerJS Valdivia</div>
             <div>
-              Junto a la tienda <b class="text-white">Barbudo Growler</b> hemos creado
+              Junto a la tienda <b className="text-white">Barbudo Growler</b> hemos creado
               un pack especial con 4 exquisitas cervezas en lata para disfrutar el día del evento,
-              <a class="text-primary" target="_blank" href="https://barbudogrowler.cl/producto/pack-beerjs-valdivia/"> ir a la Tienda 👈</a>
+              <a className="text-primary" target="_blank" href="https://barbudogrowler.cl/producto/pack-beerjs-valdivia/"> ir a la Tienda 👈</a>
               <div className="mt-2 text-light">
                 ¡Ingresa el código <code><b>PYM6BA7P</b></code> al final de tu compra y listo!
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* About */}
         <div className="grid gap-6 mt-40 md:grid-cols-2">
@@ -225,9 +225,9 @@ export default function Home() {
             </div>
             <div className="mt-2">
               <div id="mc_embed_signup">
-                <form action="https://beerjs.us17.list-manage.com/subscribe/post?u=9b46314bf820d031baa115be0&amp;id=b4e86ad395" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <form action="https://beerjs.us17.list-manage.com/subscribe/post?u=9b46314bf820d031baa115be0&amp;id=b4e86ad395" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                   <div id="mc_embed_signup_scroll">
-                    <div class="mc-field-group">
+                    <div className="mc-field-group">
                       <div className="relative">
                         <input className="w-full h-12 p-4 pr-16 rounded-lg outline-none bg-background required email" placeholder="tu@email.com" type="email" name="EMAIL" id="mce-EMAIL" />
                         <button className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-lg outline-none bg-primary">
@@ -235,11 +235,11 @@ export default function Home() {
                         </button>
                       </div>
                     </div>
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style={{ display: 'none' }}></div>
-                      <div class="response" id="mce-success-response" style={{ display: 'none' }}></div>
+                    <div id="mce-responses" className="clear">
+                      <div className="response" id="mce-error-response" style={{ display: 'none' }}></div>
+                      <div className="response" id="mce-success-response" style={{ display: 'none' }}></div>
                     </div>
-                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_9b46314bf820d031baa115be0_b4e86ad395" tabindex="-1" value="" /></div>
+                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_9b46314bf820d031baa115be0_b4e86ad395" tabIndex="-1" value="" /></div>
                   </div>
                 </form>
               </div>

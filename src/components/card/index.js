@@ -1,4 +1,3 @@
-import styles from './index.module.css'
 import { Icon } from '../'
 
 function Card(props) {
@@ -8,22 +7,27 @@ function Card(props) {
       <div className="p-6">
         <div className="text-base text-primary">{props.name}</div>
         <div>
-          {props.job}
+          {props.position} / {props.company}
         </div>
         <div className="flex gap-2 mt-1">
           {props.linkedin && (
-            <a href={props.linkedin} target="_blank">
+            <a href={`https://linkedin.com/in/${props.linkedin}`} target="_blank">
               <Icon name="linkedin" size={18} />
             </a>
           )}
           {props.twitter && (
-            <a href={props.twitter} target="_blank">
+            <a href={`https://twitter.com/${props.twitter}`} target="_blank">
               <Icon name="twitter" size={18} />
             </a>
           )}
           {props.github && (
-            <a href={props.github} target="_blank">
+            <a href={`https://github.com/${props.github}`} target="_blank">
               <Icon name="github" size={18} />
+            </a>
+          )}
+          {props.instagram && (
+            <a href={`https://instagram.com/${props.instagram}`} target="_blank">
+              <Icon name="instagram" size={18} />
             </a>
           )}
           {props.web && (

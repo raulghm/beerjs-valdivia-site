@@ -1,11 +1,12 @@
 import styles from './index.module.css'
 import { Icon, Ribbon } from '../'
+import { data } from '../../../package.json'
 
 function Socialbar() {
   return (
     <div className={styles.socialbar}>
       <div>
-        <Ribbon month="Octubre" />
+        <Ribbon month={data.edition} />
       </div>
 
       <div className={styles.socialbarLine}></div>
