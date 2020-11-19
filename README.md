@@ -1,6 +1,6 @@
 # BeerJS Valdivia site
 
-- NextsJS
+- NextJS
 - Tailwind
 
 <3
