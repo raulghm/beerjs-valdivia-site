@@ -3,4 +3,4 @@
 - NextJS
 - Tailwind
 
-<3
+</> with 💚 by @raulghm
