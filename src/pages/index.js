@@ -2,8 +2,6 @@ import Head from 'next/head'
 import { Socialbar, Hero, Attend, Card, Icon } from '../components'
 import { data } from '../../package.json'
 
-console.log("data", data)
-
 export default function Home() {
   return (
     <div>
@@ -181,7 +179,7 @@ export default function Home() {
             <a href="https://nubecowork.biz" target="_blank" className="mx-3">
               <img src="/images/nube-cowork.png" alt="nube-cowork" className="h-16" />
             </a>
-            <a href="https://www.4geeksacademy.co/es/inicio/santiago-chile" target="_blank" className="mx-3">
+            <a href="https://4geeksacademy.co/us/location/santiago-chile" target="_blank" className="mx-3">
               <img src="/images/4geekcamp.png" alt="4geekcamp" className="h-16" />
             </a>
           </div>
@@ -261,10 +259,14 @@ export default function Home() {
                 <Icon name="slack" />
               </a>
             </div>
+            <div className="mx-2">|</div>
+            <a href="https://es.confcodeofconduct.com/" target="_blank" className="text-xs label text-dark">Código de conducta</a>
           </div>
 
-          <div className="mt-4 md:mt-0">
-            <a href="https://es.confcodeofconduct.com/" target="_blank" className="text-xs label text-dark">Código de conducta</a>
+          <div className="mt-4 opacity-50 md:mt-0">
+            <a href="https://github.com/raulghm/beerjs-valdivia-site" target="_blank" className="text-xs label text-dark">
+              code with 💛 by @raulgm
+            </a>
           </div>
         </div>
       </footer>
