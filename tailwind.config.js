@@ -13,11 +13,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#F8DA2D',
-        secondary: '#222D41',
-        background: '#1A202D',
-        dark: '#A0AEC0',
-        light: '#E2E8F0',
+        primary: {
+          light: '#ffe75b',
+          DEFAULT: '#f8da2d',
+          dark: '#d0b134',
+        },
+        secondary: '#222d41',
+        background: '#1a202d',
+        dark: '#a0aec0',
+        light: '#e2e8f0',
       },
       borderRadius: {
         xl: '1.4rem'
