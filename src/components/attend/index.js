@@ -14,7 +14,7 @@ function Attend() {
       </div>
       <div className="flex flex-row ml-4">
         <a target="_blank" href={url}>
-          <h4 className="flex items-center justify-center rounded-lg cursor-pointer bg-primary">
+          <h4 className="flex items-center justify-center rounded-lg cursor-pointer bg-primary hover:bg-primary-light">
             <div className="p-2 text-xl title text-background">{title}</div>
           </h4>
         </a>

@@ -4,12 +4,12 @@ function Card(props) {
   return (
     <div className="rounded-xl bg-secondary border-primary">
       <div className="h-56 bg-center bg-cover rounded-t-xl" style={{ backgroundImage: 'url(' + props.avatar + ')', filter: 'hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2)' }}></div>
-      <div className="p-6">
+      <div className="p-6 lg:p-8">
         <div className="text-base text-primary">{props.name}</div>
         <div>
           {props.position} / {props.company}
         </div>
-        <div className="flex gap-2 mt-1">
+        <div className="flex gap-3 mt-2">
           {props.linkedin && (
             <a href={`https://linkedin.com/in/${props.linkedin}`} target="_blank">
               <Icon name="linkedin" size={18} />

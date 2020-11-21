@@ -104,9 +104,21 @@ export default function Home() {
           </div>
         </div> */}
 
+        {/* CFP */}
+        <div className="grid gap-6 mt-40">
+          <div className="p-8 rounded-xl bg-secondary">
+            <div className="label">CFP: Postula una charla</div>
+            <div className="mt-1 mb-2 title">🙊 Sé el próximo speaker</div>
+            <div>
+              Las puertas están abiertas para tu próxima charla,
+              <a className="text-primary" target="_blank" href="https://github.com/beerjs/valdivia/issues"> ingresa tu propuesta 👈</a>
+            </div>
+          </div>
+        </div>
+
         {/* About */}
         <div className="grid gap-6 mt-40 md:grid-cols-2">
-          <div className="p-6 border-2 rounded-xl bg-background border-primary">
+          <div className="p-6 border-2 lg:p-8 rounded-xl bg-background border-primary">
             <div className="label">Sobre</div>
             <div className="mt-1 mb-2 title">BeerJS Valdivia</div>
             <div>
@@ -190,7 +202,7 @@ export default function Home() {
       <footer className="mt-40">
 
         {/* Info */}
-        <div className="grid gap-2 p-8 mb-2 md:grid-cols-2 bg-secondary rounded-xl">
+        <div className="grid gap-2 p-6 mb-2 lg:p-8 md:grid-cols-2 bg-secondary rounded-xl">
           <div>
             <div className="flex">
               <div className="hidden md:block">
@@ -202,7 +214,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-2">
-              <a href="https://github.com/beerjs/valdivia/issues" target="_blank">
+              <a href="https://github.com/beerjs/valdivia/issues" target="_blank" className="hover:text-light">
                 En nuestro repositorio mantenemos
                 todas las versiones anteriores con
                 el contenido de cada charla
