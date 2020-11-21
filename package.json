@@ -6,7 +6,10 @@
     "build": "next build",
     "start": "next start",
     "preexport": "npm run build",
-    "export": "next export"
+    "export": "next export",
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier-standard '{src}/**/*.{js,jsx}'",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "autoprefixer": "^9",
@@ -16,47 +19,32 @@
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "scrollreveal": "^4.0.7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
-  "data": {
-    "edition": "noviembre",
-    "day": "26",
-    "hour": "19:00",
-    "year": "2020",
-    "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&details=Edici%C3%B3n+noviembre&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20201126T220000Z%2F20201127T000000Z",
-    "meetup-url": "https://meet.jit.si/beerjsvaldivia",
-    "meetup-active": false,
-    "speakers": [
-      {
-        "name": "Ender Bonnet",
-        "avatar": "https://ca.slack-edge.com/T0R6F3YAX-U6N4PK6GP-ef84576c55f7-512",
-        "position": "Frontend Developer",
-        "company": "Cornershop",
-        "talk": "You should be Nexting JS",
-        "talk-details": "Una mirada a lo sencillo que nos hace la vida Nextjs en la actualidad o como me gusta llamarlo el framerwork_de_reactjs_ahora_si_que_si_versión_final_final.js",
-        "rrss": {
-          "web": "",
-          "github": "enBonnet",
-          "twitter": "enBonnet",
-          "linkedin": "",
-          "instagram": "enBonnet"
-        }
-      },
-      {
-        "name": "Facundo Giuliani",
-        "avatar": "https://images.ctfassets.net/mvkmiycntf3t/3wrK2qDql4l1wljhSiSSc1/edbd1041d9a3b96112f9e4fcdc7c356a/Facundo2019-2.jpg",
-        "position": "FullStack Developer",
-        "company": "Multitracks.com",
-        "talk": "JAMstack: Volviendo (un poco) a las raíces",
-        "talk-details": "¡Los sitios estáticos están de regreso! \n Con conceptos desarrollados en los últimos años podemos sacar ventaja de ciertas características de los sitios estáticos y crear aplicaciones web más performantes, seguras, escalables y baratas.",
-        "rrss": {
-          "web": "https://fgiuliani.com",
-          "github": "fgiuliani",
-          "twitter": "facundozurdo",
-          "linkedin": "",
-          "instagram": "facundozurdo"
-        }
-      }
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@commitlint/prompt-cli": "8.3.5",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-config-standard": "14.1.1",
+    "eslint-config-standard-react": "9.2.0",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react-hooks": "4.0.6",
+    "eslint-plugin-standard": "4.0.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier-standard": "^16.4.1"
   }
 }

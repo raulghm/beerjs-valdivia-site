@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "env": {
+    "browser": true,
+    "jest": false
+  }
+}
