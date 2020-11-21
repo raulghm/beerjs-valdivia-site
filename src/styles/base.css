@@ -3,11 +3,11 @@
 
 /* uncss:ignore start */
 body {
-	background-color: #1a202d;
-	background-image: url(../assets/images/bg-lines.svg);
-	@apply text-dark;
-	@apply font-body;
-	@apply text-sm;
+  background-color: #1a202d;
+  background-image: url(../assets/images/bg-lines.svg);
+  @apply text-dark;
+  @apply font-body;
+  @apply text-sm;
 }
 
 @screen md {
@@ -17,18 +17,18 @@ body {
 }
 
 h1 {
-	@apply font-display;
-	@apply text-2xl;
+  @apply font-display;
+  @apply text-2xl;
 }
 
 h2 {
-	@apply font-display;
-	@apply text-xl;
+  @apply font-display;
+  @apply text-xl;
 }
 
 h3 {
-	@apply font-display;
-	@apply text-lg;
+  @apply font-display;
+  @apply text-lg;
 }
 
 .heading {
@@ -55,7 +55,7 @@ h3 {
   @apply text-primary;
   @apply font-display;
   @apply font-semibold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
 }
 
@@ -81,7 +81,7 @@ main {
 }
 
 @screen md {
-  main:before {
+  body:before {
     content: '';
     background-image: url(/images/bg.png);
     background-size: cover;
@@ -92,7 +92,7 @@ main {
     left: 0;
     right: 0;
     z-index: -1;
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 

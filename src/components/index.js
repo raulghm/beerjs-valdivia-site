@@ -7,13 +7,4 @@ import Attend from './attend'
 import Card from './card'
 import Input from './input'
 
-export {
-  Layout,
-  Socialbar,
-  Hero,
-  Ribbon,
-  Icon,
-  Attend,
-  Card,
-  Input
-}
+export { Layout, Socialbar, Hero, Ribbon, Icon, Attend, Card, Input }

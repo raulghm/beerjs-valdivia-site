@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from 'react'
 
-function SvgComponent(props) {
+function SvgComponent (props) {
   return (
     <svg viewBox="0 0 27 48" {...props}>
       <path

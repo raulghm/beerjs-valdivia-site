@@ -13,7 +13,7 @@ import Plane from './svg/plane'
 import ArrowRight from './svg/arrow-right'
 import Web from './svg/web'
 
-const Icon = props => {
+const Icon = (props) => {
   const size = props.size ? props.size : 24
   const params = {
     width: size,
@@ -34,7 +34,7 @@ const Icon = props => {
     quote: <Quote {...params} />,
     plane: <Plane {...params} />,
     'arrow-right': <ArrowRight {...params} />,
-    web: <Web {...params} />
+    web: <Web {...params} />,
   }
 
   return icon[props.name]

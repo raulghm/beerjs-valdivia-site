@@ -5,20 +5,19 @@
   @apply pr-2;
   @apply bg-secondary;
   @apply flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 20;
-  @apply m-6;
   @apply justify-between;
   @apply items-center;
 }
 
 @screen sm {
   .attend {
-    position: fixed;
     left: auto;
+    @apply m-6;
   }
 }
 
