@@ -15,13 +15,13 @@ function Card(props) {
         <div>
           {props.position} / {props.company}
         </div>
-        <div className="flex gap-3 mt-2">
+        <div className="flex mt-2">
           {props.linkedin && (
             <a
               href={`https://linkedin.com/in/${props.linkedin}`}
               target="_blank"
               rel="noreferrer"
-              className="opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100">
               <Icon name="linkedin" size={18} />
             </a>
           )}
@@ -30,7 +30,7 @@ function Card(props) {
               href={`https://twitter.com/${props.twitter}`}
               target="_blank"
               rel="noreferrer"
-              className="opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100">
               <Icon name="twitter" size={18} />
             </a>
           )}
@@ -39,7 +39,7 @@ function Card(props) {
               href={`https://github.com/${props.github}`}
               target="_blank"
               rel="noreferrer"
-              className="opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100">
               <Icon name="github" size={18} />
             </a>
           )}
@@ -48,7 +48,7 @@ function Card(props) {
               href={`https://instagram.com/${props.instagram}`}
               target="_blank"
               rel="noreferrer"
-              className="opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100">
               <Icon name="instagram" size={18} />
             </a>
           )}
@@ -57,7 +57,7 @@ function Card(props) {
               href={props.web}
               target="_blank"
               rel="noreferrer"
-              className="opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100">
               <Icon name="web" size={18} />
             </a>
           )}
