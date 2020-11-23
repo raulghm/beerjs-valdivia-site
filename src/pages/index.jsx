@@ -279,6 +279,9 @@ export default function Home() {
                   <div id="mc_embed_signup_scroll">
                     <div className="mc-field-group">
                       <div className="relative">
+                        <label for="mce-EMAIL" style={{ position: 'absolute', left: '-5000px' }}>
+                          Email
+                        </label>
                         <input
                           className="w-full h-12 p-4 pr-16 rounded-lg outline-none bg-background required email"
                           placeholder="tu@email.com"
@@ -325,21 +328,24 @@ export default function Home() {
                 href="https://twitter.com/BeerJSValdivia"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 opacity-75 hover:opacity-100">
+                className="mx-2 opacity-75 hover:opacity-100"
+                aria-label="Enlace a Twitter BeerJS Valdivia">
                 <Icon name="twitter" />
               </a>
               <a
                 href="https://www.instagram.com/beerjsvaldivia"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 opacity-75 hover:opacity-100">
+                className="mx-2 opacity-75 hover:opacity-100"
+                aria-label="Enlace a Instagram BeerJS Valdivia">
                 <Icon name="instagram" />
               </a>
               <a
                 href="https://devschile.cl"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 opacity-75 hover:opacity-100">
+                className="mx-2 opacity-75 hover:opacity-100"
+                aria-label="Enlace a Slack DevsChile">
                 <Icon name="slack" />
               </a>
             </div>

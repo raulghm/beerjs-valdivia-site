@@ -21,7 +21,8 @@ function Card(props) {
               href={`https://linkedin.com/in/${props.linkedin}`}
               target="_blank"
               rel="noreferrer"
-              className="mr-3 opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100"
+              aria-label="Más info en Linkedin">
               <Icon name="linkedin" size={18} />
             </a>
           )}
@@ -30,7 +31,8 @@ function Card(props) {
               href={`https://twitter.com/${props.twitter}`}
               target="_blank"
               rel="noreferrer"
-              className="mr-3 opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100"
+              aria-label="Más info en Twitter">
               <Icon name="twitter" size={18} />
             </a>
           )}
@@ -39,7 +41,8 @@ function Card(props) {
               href={`https://github.com/${props.github}`}
               target="_blank"
               rel="noreferrer"
-              className="mr-3 opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100"
+              aria-label="Más info en Github">
               <Icon name="github" size={18} />
             </a>
           )}
@@ -48,7 +51,8 @@ function Card(props) {
               href={`https://instagram.com/${props.instagram}`}
               target="_blank"
               rel="noreferrer"
-              className="mr-3 opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100"
+              aria-label="Más info en Instagram">
               <Icon name="instagram" size={18} />
             </a>
           )}
@@ -57,7 +61,8 @@ function Card(props) {
               href={props.web}
               target="_blank"
               rel="noreferrer"
-              className="mr-3 opacity-75 hover:opacity-100">
+              className="mr-3 opacity-75 hover:opacity-100"
+              aria-label="Más info en su Web">
               <Icon name="web" size={18} />
             </a>
           )}

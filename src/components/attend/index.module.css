@@ -1,5 +1,4 @@
 .attend {
-  @apply rounded-lg;
   @apply py-2;
   @apply pl-4;
   @apply pr-2;
@@ -18,6 +17,7 @@
   .attend {
     left: auto;
     @apply m-6;
+    @apply rounded-lg;
   }
 }
 
