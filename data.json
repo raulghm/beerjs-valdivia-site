@@ -5,7 +5,7 @@
   "year": "2020",
   "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&details=Edici%C3%B3n+noviembre&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20201126T220000Z%2F20201127T000000Z",
   "meetup-url": "https://meet.jit.si/beerjsvaldivia",
-  "meetup-active": false,
+  "meetup-active": true,
   "speakers": [
     {
       "name": "Ender Bonnet",
