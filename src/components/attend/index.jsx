@@ -21,7 +21,7 @@ function Attend() {
   }, [])
 
   return (
-    <div className={`${styles.attend} attend`}>
+    <div className={`${styles.attend} attend hidden`}>
       <div>
         <div className={styles.attendHeading}>Jueves . {data.day}</div>
         <div className="text-sm">
