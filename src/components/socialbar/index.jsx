@@ -45,8 +45,15 @@ function Socialbar() {
         aria-label="Spotify">
         <Icon name="github" />
       </a>
-      <a href="https://devschile.cl/" target="_blank" rel="noreferrer" aria-label="Spotify">
+      <a href="https://devschile.cl" target="_blank" rel="noreferrer" aria-label="Spotify">
         <Icon name="slack" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCy9e3yxv9Vy99RflcL7mQng"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Spotify">
+        <Icon name="youtube" />
       </a>
     </div>
   )

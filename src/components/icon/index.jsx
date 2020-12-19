@@ -12,6 +12,7 @@ import Quote from './svg/quote'
 import Plane from './svg/plane'
 import ArrowRight from './svg/arrow-right'
 import Web from './svg/web'
+import Youtube from './svg/youtube'
 
 const Icon = (props) => {
   const size = props.size ? props.size : 24
@@ -35,6 +36,7 @@ const Icon = (props) => {
     plane: <Plane {...params} />,
     'arrow-right': <ArrowRight {...params} />,
     web: <Web {...params} />,
+    youtube: <Youtube {...params} />,
   }
 
   return icon[props.name]
