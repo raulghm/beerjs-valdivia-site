@@ -365,7 +365,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               className="text-xs label text-dark">
-              code with 💛 by @raulgm
+              coded with 🍺 by @raulgm
             </a>
           </div>
         </div>
