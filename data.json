@@ -1,9 +1,9 @@
 {
   "edition": "febrero",
-  "day": "26",
+  "day": "25",
   "hour": "19:00",
   "year": "2021",
-  "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&details=Edici%C3%B3n+de+enero&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20210128T220000Z%2F20210129T000000Z",
+  "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20210225T220000Z%2F20210225T220000Z",
   "meetup-url": "https://meet.jit.si/beerjsvaldivia",
   "meetup-active": false,
   "speakers": [
@@ -26,7 +26,7 @@
       "name": "José Gatica",
       "avatar": "https://secure.gravatar.com/avatar/f3e6d617f468357f03517079ac83da32?size=200",
       "position": "Frontend developer",
-      "company": "",
+      "company": "Colegio Helvecia",
       "talk": "CiudadLimpiApp, de la Flisol a crear una app comunitaria",
       "talk-details": "Cómo conocí a quienes ahora son mis socios de proyecto. De una charla en la Flisol Valdivia pasamos a hacer varias cosas juntos, entre ellas traer a Valdivia al padre del Software Libre Richard Stallman. Pero lo que nos tiene trabajando de cabeza ahora es nuestra obra prima en forma de app comunitaria: Ciudad LimpiApp, creada usando Angular en Ionic. (NOTA: eso último, lo técnico, será la médula de la charla o al menos gran parte de ella).",
       "rrss": {
