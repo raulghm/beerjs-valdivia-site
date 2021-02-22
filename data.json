@@ -1,38 +1,39 @@
 {
-  "edition": "enero",
-  "day": "28",
+  "edition": "febrero",
+  "day": "26",
   "hour": "19:00",
   "year": "2021",
   "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&details=Edici%C3%B3n+de+enero&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20210128T220000Z%2F20210129T000000Z",
   "meetup-url": "https://meet.jit.si/beerjsvaldivia",
-  "meetup-active": null,
+  "meetup-active": false,
   "speakers": [
     {
-      "name": "David Lay",
-      "avatar": "https://avatars1.githubusercontent.com/u/595815?s=460&v=4",
-      "position": "Software Developer",
-      "company": "Globant",
-      "talk": "Notion en la vida real v2",
-      "talk-details": "Segunda edición de la charla sobre la aplicación Notion. Casos y ejemplos reales para sacar mayor provecho para la vida y el trabajo.",
+      "name": "Pedro Ojeda Aguilar",
+      "avatar": "https://doc-0g-74-docs.googleusercontent.com/docs/securesc/45hmijhvr7ghu0nse8p5mjmmiphlgq3k/rmpj3n84c5qqnkahp8vno2nkb6sdcmai/1614029550000/10218481917334220423/14279036756331320606/1eDVJ28qFT27nQaukeJMojvCR5vZznV94?e=view&authuser=1&nonce=42slkrodhj4e2&user=14279036756331320606&hash=qnh8allefog4q3k18l8h03ifnu9r18gs",
+      "position": "CIO",
+      "company": "Ministerio del Medio Ambiente y Pckz",
+      "talk": "Enquefase.cl • Transformar un problema cotidiano en una solución simple y eficiente",
+      "talk-details": "Se mostrará cómo tomar una idea de forma estratégica, para dar una solución rápida y efectiva, utilizando la menor cantidad de recursos. Usaremos de ejemplo la aplicación enquefase.cl, que en un mes logró llegar a un flujo de 2 millones de visitas nuevas cada la semana. Se abordarán temas como el nacimiento de la problemática, diseño de  solución y arquitectura, tecnologías y desarrollo rápido, y finalmente las barreras en la escalabilidad y definición del modelo de negocios.",
       "rrss": {
-        "web": "https://davidlaym.com",
-        "github": "davidlaym",
-        "twitter": "davidlaym",
-        "linkedin": "davidlaym",
-        "instagram": ""
+        "web": "https://www.pckz.cl",
+        "github": "pckz",
+        "twitter": "pckz",
+        "linkedin": "",
+        "instagram": "xavier.oa"
       }
     },
     {
-      "name": "Felipe Peña",
-      "avatar": "https://avatars1.githubusercontent.com/u/440097?s=460&u=328a24fb60dc0012f0a9e0c065c67a01efd01c7c&v=4",
-      "position": "Director of Engineering (Backend / Software Architect)",
+      "name": "José Gatica",
+      "avatar": "https://secure.gravatar.com/avatar/f3e6d617f468357f03517079ac83da32?size=200",
+      "position": "Frontend developer",
       "company": "",
-      "talk": "Levantando un equipo de ingeniería en pandemia",
-      "talk-details": "En esta charla, se expondrá la experiencia de hacer una transición, en tiempos de pandemia, de un equipo de ingeniería de software con fuerte cultura de oficina y limitada experiencia de trabajo remoto. En detalle:\n * ¿Cómo se crearon mejores prácticas para la contratación? \n * ¿Cuál fue el impacto personal y del equipo al estar todos trabajando desde la casa? \n* ¿Cuál fue la redefinición de metas y métricas durante el año 2020?\n* ¿Cómo se mantuvo a flote, dentro del equipo, la motivación e interés en nuevos proyectos?",      "rrss": {
-        "web": "https://www.felipepena.co",
-        "github": "fpena",
-        "twitter": "patrosmania",
-        "linkedin": "felipepenariveros",
+      "talk": "CiudadLimpiApp, de la Flisol a crear una app comunitaria",
+      "talk-details": "Cómo conocí a quienes ahora son mis socios de proyecto. De una charla en la Flisol Valdivia pasamos a hacer varias cosas juntos, entre ellas traer a Valdivia al padre del Software Libre Richard Stallman. Pero lo que nos tiene trabajando de cabeza ahora es nuestra obra prima en forma de app comunitaria: Ciudad LimpiApp, creada usando Angular en Ionic. (NOTA: eso último, lo técnico, será la médula de la charla o al menos gran parte de ella).",
+      "rrss": {
+        "web": "https://www.josegatica.cl",
+        "github": "JoseGatica",
+        "twitter": "josegatica",
+        "linkedin": "",
         "instagram": ""
       }
     }
