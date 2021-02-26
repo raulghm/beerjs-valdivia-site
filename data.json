@@ -5,7 +5,7 @@
   "year": "2021",
   "meetup-calendar": "https://www.google.com/calendar/render?action=TEMPLATE&text=BeerJS+Valdivia&location=https%3A%2F%2Fmeet.jit.si%2Fbeerjsvaldivia&dates=20210225T220000Z%2F20210225T220000Z",
   "meetup-url": "https://meet.jit.si/beerjsvaldivia",
-  "meetup-active": true,
+  "meetup-active": null,
   "speakers": [
     {
       "name": "Pedro Ojeda Aguilar",
